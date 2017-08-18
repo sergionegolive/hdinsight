@@ -1,3 +1,2 @@
-/usr/bin/anaconda/bin/conda install -c conda-forge tensorflow
 sudo /usr/bin/anaconda/bin/conda update conda
 sudo /usr/bin/anaconda/bin/conda install scikit-learn=0.18.2
