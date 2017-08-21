@@ -1,1 +1,1 @@
-sqoop-import --connect jdbc:oracle:thin:@172.16.0.22:1521/odec --username jde --password jde --query 'select * from TESTDTA.cnpvf4111 where $CONDITIONS' --hive-import --hive-table auxiliar.incf4111 --target-dir /user/hive/incremental/INCf4111 -m 1
+sqoop-eval --connect jdbc:oracle:thin:@172.16.0.22:1521/odec --username jde --password jde --query "select count(*) from TESTDTA.F4211"
