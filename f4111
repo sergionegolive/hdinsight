@@ -1,1 +1,3 @@
+echo "INICIO SCRIPT"
 sqoop-eval --connect jdbc:oracle:thin:@172.16.0.22:1521/odec --username jde --password jde --query "select count(*) from TESTDTA.F4211"
+echo "TERMINO SCRIPT"
