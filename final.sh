@@ -12,4 +12,8 @@ echo "Empiezo el scritp para instalar openvpn"
 sudo apt-get --assume-yes install openvpn
 echo "Instalado OPENVPN"
 nohup sudo openvpn --config /home/sshuser/Congelados.ovpn &
+echo "BORRO BASURA DE HDFS1 4211"
+sudo hdfs dfs -rm -r /user/hive/incremental/INCf4211
+echo "BORRO BASURA DE HDFS2 3460"
+sudo hdfs dfs -rm -r /user/hive/incremental/INCf3460
 echo "Acabo el scritp"
