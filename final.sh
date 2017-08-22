@@ -1,5 +1,7 @@
 echo "copio fichero a auth"
 sudo hdfs dfs -copyToLocal /recursos/auth.txt /home/sshuser/
+echo "copio fichero a sqoop_ingesta"
+sudo hdfs dfs -copyToLocal /recursos/sqoopingesta.sh /home/sshuser/
 echo "copio fichero a Congelados"
 sudo hdfs dfs -copyToLocal /recursos/Congelados.ovpn /home/sshuser/
 echo "copio fichero a ojdbc6"
