@@ -1,1 +1,3 @@
-
+echo "INICIO SCRIPT DE SQP"
+sudo bash /home/sshuser/sqoopingesta.sh
+echo "ESPERO A QUE ACABE EL SCRIPT DE SQP"
