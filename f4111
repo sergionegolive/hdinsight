@@ -1,11 +1,1 @@
-echo "INICIO SCRIPT 4111"
-sqoop-import --connect jdbc:oracle:thin:@172.16.0.22:1521/odec --username jde --password jde --query 'select * from TESTDTA.cnpvf4111 where $CONDITIONS' --hive-import --hive-table auxiliar.incf4111 --target-dir /user/hive/incremental/INCf4111 -m 1
-echo "TABLA 4101"
-sqoop-import --connect jdbc:oracle:thin:@172.16.0.22:1521/odec --username jde --password jde --table TESTDTA.CNPVF4101 --columns IMSTKT,IMITM,IMUPMJ,IMSRP2,IMSRP3,IMSRP6,IMDSC1,IMDSC2 --hive-import --hive-table auxiliar.incf4101 --target-dir /user/hive/incremental/INCf4101 -m 1
-echo "TABLA 3460"
-sqoop import --connect jdbc:oracle:thin:@172.16.0.22:1521/odec --username JDE --password jde --table TESTDTA.CNPVF3460 --columns MFDRQJ,MFITM,MFUORG,MFTYPF,MFUPMJ  --check-column MFUPMJ --incremental lastmodified --last-value 2016-06-01 --target-dir /user/hive/incremental/INCf3460 -m 1
-echo "TABLA 4104"
-sqoop-import --connect jdbc:oracle:thin:@172.16.0.22:1521/odec --username jde --password jde --table TESTDTA.CNPVF4104 --columns IVAN8,IVXRT,IVITM,IVEXDJ,IVEFTJ,IVCITM,IVDSC1,IVDSC2,IVALN,IVLITM,IVAITM,IVURDT,IVURAT,IVURAB,IVUSER,IVPID,IVJOBN,IVUPMJ,IVTDAY,IVRATO,IVAPSP,IVAPSS,IVMCU,IVURCD,IVURRF,IVIDEM,IVCIRV,IVADIND,IVBPIND,IVCARDNO --hive-import --hive-table auxiliar.incf4104 --target-dir /user/hive/incremental/INCf4104 -m 1
-echo "TABLA 4211"
-sqoop import --connect jdbc:oracle:thin:@172.16.0.22:1521/odec --username JDE --password jde --table TESTDTA.CNPVF4211 --columns SDKCOO,SDDOCO,SDDCTO,SDLNID,SDITM,SDTRDJ,SDSOQS,SDVR01,SDCO,SDUPRC,SDNXTR,SDLTTR,SDUPMJ --check-column SDUPMJ --incremental lastmodified --last-value 2017-08-01 --target-dir /user/hive/incremental/INCf4211 -m 1
-echo "TERMINA "
+
